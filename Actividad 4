@@ -1,1 +1,14 @@
 Codigo
+
+ // Solicitar entradas al usuario
+        Console.Write("Ingrese el precio del producto: $");
+        double precio = Double.Parse(Console.ReadLine());
+
+        Console.Write("Ingrese la cantidad de unidades que desea comprar: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        // Calcular subtotal
+        double subtotal = precio * cantidad;
+
+        // Inicializar descuento
+        double descuento = 0;
