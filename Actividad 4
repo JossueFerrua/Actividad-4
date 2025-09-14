@@ -1,6 +1,6 @@
 Codigo
 
- // Solicitar entradas al usuario
+        // Solicitar entradas al usuario
         Console.Write("Ingrese el precio del producto: $");
         double precio = Double.Parse(Console.ReadLine());
 
@@ -12,3 +12,19 @@ Codigo
 
         // Inicializar descuento
         double descuento = 0;
+
+        // Aplicar descuento si el subtotal es mayor a 100
+        if (subtotal > 100)
+        {
+            descuento = subtotal * 0.15; // 15% de descuento
+        }
+
+        // Calcular precio final
+        double precioFinal = subtotal - descuento;
+
+        // Mostrar resultados
+        Console.WriteLine("\n----- RESUMEN DE LA COMPRA -----");
+        Console.WriteLine($"Subtotal: ${subtotal}");
+        Console.WriteLine($"Descuento aplicado: ${descuento}");
+        Console.WriteLine($"Precio final: ${precioFinal}");
+   
